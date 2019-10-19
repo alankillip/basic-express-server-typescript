@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 
-const port = process.env.PORT || 3000;
+const port: number = Number(process.env.PORT) || 3000;
 
 // Instantiate the server
 const app = express();
