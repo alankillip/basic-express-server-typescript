@@ -1,6 +1,7 @@
 import express from 'express';
-const path = require('path');
-const bodyParser = require('body-parser');
+import path from 'path';
+import bodyParser from 'body-parser';
+
 const port = 3000;
 
 // Instantiate the server
@@ -19,7 +20,7 @@ app.use(bodyParser.json());
 
 // Basic route ( get )
 app.get('/', (req, res) => {
-    res.send('hello.');
+    res.send('hello');
 });
 
 // Basic route ( post )
